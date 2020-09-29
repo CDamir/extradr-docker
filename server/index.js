@@ -9,7 +9,7 @@ mongoose
     useUnifiedTopology: true,
     useCreateIndex: true,
   })
-  .then(() => console.log("MongoDB Connected"))
+  .then(() => console.log(`MongoDB Connected`))
   .catch((err) => console.log(`Database connection error ${err}`));
 
 mongoose.connection.on("error", () => {

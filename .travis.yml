@@ -18,15 +18,15 @@ after_success:
   - docker push damircosic/extradr-client
   - docker push damircosic/extradr-nginx
   - docker push damircosic/extradr-server
-deploy:
-  edge: true
-  provider: elasticbeanstalk
-  region: "us-east-2"
-  app: "extradr"
-  env: "Extradr-env"
-  bucket_name: "elasticbeanstalk-us-east-2-496619540486"
-  bucket_path: "extradr"
-  on:
-    branch: master
-  access_key_id: $AWS_ACCESS_KEY
-  secret_access_key: $AWS_SECRET_KEY
+# deploy:
+#   edge: true
+#   provider: elasticbeanstalk
+#   region: "us-east-2"
+#   app: "extradr"
+#   env: "Extradr-env"
+#   bucket_name: "elasticbeanstalk-us-east-2-496619540486"
+#   bucket_path: "extradr"
+#   on:
+#     branch: master
+#   access_key_id: $AWS_ACCESS_KEY
+#   secret_access_key: $AWS_SECRET_KEY

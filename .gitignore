@@ -3,7 +3,7 @@
 /server/node_modules
 # rca
 # production
-# /build
+/server/build
 
 # misc
 .DS_Store

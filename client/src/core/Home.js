@@ -38,7 +38,7 @@ export default function Home() {
   return (
     <Card className={classes.card}>
       <Typography variant="h6" className={classes.title}>
-        Home Page #@
+        Home Page v1
       </Typography>
       <CardMedia
         className={classes.media}

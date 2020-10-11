@@ -5,6 +5,10 @@ services:
     build:
       dockerfile: Dockerfile.dev
       context: ./nginx
+    depends_on:
+      - api
+    links:
+      - api
     ports:
       - "3000:80"
   mongo:

@@ -5,18 +5,18 @@ services:
     build:
       dockerfile: Dockerfile.dev
       context: ./nginx
-    depends_on:
-      - api
-    links:
-      - api
     ports:
       - "3000:80"
+    depends_on:
+      - api
   mongo:
     restart: always
     image: mongo:4.2
     ports:
       - "27017:27017"
   api:
+    expose:
+        - 5000
     build:
       dockerfile: Dockerfile.dev
       context: ./server

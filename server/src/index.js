@@ -5,19 +5,20 @@ import app from "./express";
 import mongoose from "mongoose";
 import config from "./config/config";
 // DB
-mongoose.Promise = global.Promise;
-mongoose
-  .connect(config.mongoUri, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useCreateIndex: true,
-  })
-  .then(() => console.log(`MongoDB Connected`))
-  .catch((err) => console.log(`Database connection error ${err}`));
+// const db = 'mongodb+srv://extradr-admin:damir123@cluster0.btow8.mongodb.net/extradr-dev?retryWrites=true&w=majority'
+// mongoose.Promise = global.Promise;
+// mongoose
+//   .connect(config.dbUri, {
+//     useNewUrlParser: true,
+//     useUnifiedTopology: true,
+//     useCreateIndex: true,
+//   })
+//   .then(() => console.log(`MongoDB Connected`))
+//   .catch((err) => console.log(`Database connection error ${err}`));
 
-mongoose.connection.on("error", () => {
-  throw new Error(`unable to connect to database: ${config.mongoUri}`);
-});
+// mongoose.connection.on("error", () => {
+//   throw new Error(`unable to connect to database: ${config.mongoUri}`);
+// });
 
 app
   .listen(5000, () => {

@@ -1,3 +1,3 @@
-# Extradr
+# Extradr-docker
 
-mern app
+MERN + Docker + Travis + AWS ElasticBeanstalk

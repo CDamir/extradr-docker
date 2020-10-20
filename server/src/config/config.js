@@ -9,6 +9,6 @@ const config = {
     process.env.MONGO_PORT +
     "/" +
     process.env.MONGO_DB_NAME,
-    dbUri: 'mongodb+srv://extradr-admin:damir123@cluster0.btow8.mongodb.net/extradr-dev?retryWrites=true&w=majority'
+    dbUri: ''
 };
 export default config;

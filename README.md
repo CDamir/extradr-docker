@@ -1,3 +1,3 @@
 # Extradr-docker
 
-MERN + Docker + Travis + AWS ElasticBeanstalk
+Tech stack: MERN + Docker + Travis + AWS ElasticBeanstalk
